@@ -1,3 +1,4 @@
+@extends('layouts.main_layout')
 @section('content')
     <div id="home">
         <div class="container">
@@ -5,12 +6,12 @@
 
             <div class="list_container">
                 <ul class="flex_wrap">
-                    @foreach ($movies as $movie)
+                    @foreach ($ospiti as $ospite)
                         <li>
-                            <a href="{{ route('movie', $movie->id) }}">
+                            <a href="{{ route('ospite', $ospite->id) }}">
                                 <div class="card">
-                                    <h3>{{ $movie['title'] }}</h3>
-                                    <h5>Voto: {{ $movie['vote'] }}</h5>
+                                    <h3>{{ $ospite['name'] }} {{ $ospite['lastname'] }}</h3>
+                                    
                                 </div>
                             </a>
                         </li>

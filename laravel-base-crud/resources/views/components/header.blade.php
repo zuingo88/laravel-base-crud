@@ -1,3 +1,7 @@
 <header>
-    <h1>Beautiful Header</h1>
+    <div class="container flex space_bet align_cen">
+        <h3><a href="{{ route('home') }}">HOME</a></h3>
+        <h2>Big ciao from your favourite Header!!!</h2>
+        <h3>blablabla</h3>
+    </div>
 </header>
