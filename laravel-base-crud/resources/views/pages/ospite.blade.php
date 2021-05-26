@@ -2,7 +2,7 @@
 @section('content')
     <div id="ospite">
         <div class="container">
-            <h1>{{ $ospite['name'] }} {{ $ospite['lastname'] }}</h1>
+            <h1>{{ $ospite->name }} {{ $ospite->lastname }}</h1>
             <h3>Identificativo: {{ $ospite->id }}</h3>
             <h3>Data di nascita: {{ $ospite->date_of_birth }}</h3>
             <h3>Tipo id documento: {{ $ospite->document_type }}</h3>

@@ -10,13 +10,19 @@
                         <li>
                             <a href="{{ route('ospite', $ospite->id) }}">
                                 <div class="card">
-                                    <h3>{{ $ospite['name'] }} {{ $ospite['lastname'] }}</h3>
+                                    <h3>{{ $i++ }}. {{ $ospite->name }} {{ $ospite->lastname }}</h3>
                                     
                                 </div>
                             </a>
                         </li>
                     @endforeach
                 </ul>
+            </div>
+
+            <div class="container flex_center new">
+                <a href="{{ route('createOspite') }}">
+                    Inserisci nuovo ospite
+                </a>
             </div>
         </div>
     </div>

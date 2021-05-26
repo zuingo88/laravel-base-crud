@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('home', 'ospitiController@home')->name('home');
 
 Route::get('/ospite{id}', 'ospitiController@ospite')->name('ospite');
+
+Route::get('/createOspite', 'ospitiController@createOspite')->name('createOspite');
+
+Route::post('/storeOspite', 'ospitiController@storeOspite')->name('storeOspite');

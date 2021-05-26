@@ -95,6 +95,19 @@ footer {
   border-bottom: solid 1px black;
 }
 
+#home .new a {
+  margin: 35px;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: white;
+  background-color: darkblue;
+  border-radius: 10px;
+}
+
+#home .new a:hover {
+  text-decoration: underline;
+}
+
 #ospite {
   padding: 30px;
   background-color: lemonchiffon;
@@ -103,6 +116,51 @@ footer {
 #ospite h1 {
   margin: 20px;
   text-align: center;
+}
+
+#createOspite {
+  padding: 30px;
+  background-color: lemonchiffon;
+}
+
+#createOspite h1 {
+  margin: 20px;
+  text-align: center;
+}
+
+#createOspite .label_row {
+  flex-grow: 0;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+#createOspite .label_row label {
+  width: 240px;
+}
+
+#createOspite .label_row input {
+  width: 300px;
+  padding: 3px 5px;
+  border: solid 1px black;
+  border-radius: 5px;
+}
+
+#createOspite .label_row input:focus {
+  outline: none;
+}
+
+#createOspite .new {
+  margin: 35px;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  background-color: darkblue;
+  border-radius: 10px;
+}
+
+#createOspite .new:hover {
+  text-decoration: underline;
 }
 
 * {
